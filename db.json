@@ -1,0 +1,301 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Peter",
+      "surname": "Bartolo",
+      "email": "peter_bartolo@hotmail.com",
+      "password": "123456",
+      "isLoggedIn": 0,
+      "cartId": 7
+    },
+    {
+      "id": 2,
+      "name": "Miriam",
+      "surname": "Farrugia",
+      "email": "mimi@gmail.com",
+      "password": "sangwann",
+      "isLoggedIn": 0,
+      "cartId": 2
+    },
+    {
+      "name": "Francois",
+      "surname": "Bartolo",
+      "email": "francois@gmail.com",
+      "password": "basketball",
+      "isLoggedIn": 0,
+      "cartId": 0,
+      "id": 3
+    },
+    {
+      "name": "asdf",
+      "surname": "asdfasd",
+      "email": "asdfasd@asdfasdfas.com",
+      "password": "123456",
+      "isLoggedIn": 0,
+      "cartId": 0,
+      "id": 4
+    },
+    {
+      "name": "Test",
+      "surname": "test",
+      "email": "test@testing.com",
+      "password": "test",
+      "isLoggedIn": 0,
+      "cartId": 0,
+      "id": 5
+    },
+    {
+      "name": "peter",
+      "surname": "bartolo",
+      "email": "testing@testing.com",
+      "password": "123456",
+      "isLoggedIn": 0,
+      "cartId": 0,
+      "id": 6
+    },
+    {
+      "name": "peter",
+      "surname": "bartolo",
+      "email": "testing2@testing.com",
+      "password": "123456",
+      "isLoggedIn": 0,
+      "cartId": 0,
+      "id": 7
+    },
+    {
+      "name": "asdasdf",
+      "surname": "asdfa",
+      "email": "testasdf@gmail.com",
+      "password": "123456",
+      "isLoggedIn": 0,
+      "cartId": 0,
+      "id": 8
+    },
+    {
+      "name": "testing",
+      "surname": "asdfasd",
+      "email": "peter_bartolo@gmail.com",
+      "password": "123456",
+      "isLoggedIn": 0,
+      "cartId": 0,
+      "id": 9
+    }
+  ],
+  "carts": [
+    {
+      "id": 1,
+      "userId": 1,
+      "total": 49,
+      "convertedToOrder": 1,
+      "items": [
+        {
+          "id": 3,
+          "qty": 7
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "userId": 2,
+      "total": 28,
+      "convertedToOrder": 0,
+      "items": [
+        {
+          "id": 1,
+          "qty": 4
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "userId": 1,
+      "total": 78,
+      "convertedToOrder": 1,
+      "items": [
+        {
+          "id": 1,
+          "qty": 4
+        },
+        {
+          "id": 5,
+          "qty": 5
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "userId": 1,
+      "total": 42,
+      "convertedToOrder": 1,
+      "items": [
+        {
+          "id": 1,
+          "qty": 2
+        },
+        {
+          "id": 4,
+          "qty": 4
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "userId": 1,
+      "total": 55,
+      "convertedToOrder": 1,
+      "items": [
+        {
+          "id": 3,
+          "qty": 5
+        },
+        {
+          "id": 5,
+          "qty": 2
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "userId": 1,
+      "total": 71,
+      "convertedToOrder": 1,
+      "items": [
+        {
+          "id": 3,
+          "qty": 2
+        },
+        {
+          "id": 2,
+          "qty": 1
+        },
+        {
+          "id": 5,
+          "qty": 5
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "userId": 1,
+      "total": 27,
+      "convertedToOrder": 0,
+      "items": [
+        {
+          "id": 2,
+          "qty": 1
+        },
+        {
+          "id": 6,
+          "qty": 2
+        }
+      ]
+    }
+  ],
+  "orders": [
+    {
+      "id": 1,
+      "userId": 1,
+      "cartId": 1
+    },
+    {
+      "userId": 1,
+      "cartId": 1,
+      "id": 2
+    },
+    {
+      "userId": 1,
+      "cartId": 3,
+      "id": 3
+    },
+    {
+      "userId": 1,
+      "cartId": 4,
+      "id": 4
+    },
+    {
+      "userId": 1,
+      "cartId": 5,
+      "id": 5
+    },
+    {
+      "userId": 1,
+      "cartId": 6,
+      "id": 6
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Herb-infused Olive Oil for Pizza 500ml",
+      "ingredients": "oregano, thyme, basil",
+      "description": "This 100% organic herb-infused olive oil is the ideal healthy dressing for home-made and store-bought pizzas. Drizzle over your pizza prior to baking or just before you take your first bite, and enjoy a tasty trip to the Mediterranean culture.",
+      "volume": 500,
+      "price": 7,
+      "image": "olive-oil-pizza-500.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Herb-infused Olive Oil for Red Meats 500ml",
+      "ingredients": "rosemary, garlic, bay leaves",
+      "description": "100% organic herb-infused olive oil. We recommend drizzling onto your favourite raw meat prior to grilling, barbequing, baking, or as desired. Can also be added to marinades for extra healthy and delicious flavours.",
+      "volume": 500,
+      "price": 7,
+      "image": "olive-oil-red-meat-500.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Herb-infused Olive Oil for Poultry 500ml",
+      "ingredients": "chives, dill, garlic",
+      "description": "100% organic herb-infused olive oil. Combined with tender love and care to elevate your poultry dishes. Drizzle over raw or cooked poultry or add to marinades. Mega delicious if drizzled over grilled boneless thighs!",
+      "volume": 500,
+      "price": 7,
+      "image": "olive-oil-poultry-500.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Herb-infused Olive Oil for Salads 500ml",
+      "ingredients": "mint, garlic, chives",
+      "description": "100% organic herb-infused olive oil to make your salads less boring! Drizzle over leafy greens, raw or cooked vegetables and enjoy this delicious twist to your everyday lunch or dinner.",
+      "volume": 500,
+      "price": 7,
+      "image": "olive-oil-salads-500.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Herb-infused Olive Oil for Pizza 750ml",
+      "ingredients": "oregano, thyme, basil",
+      "description": "This 100% organic herb-infused olive oil is the ideal healthy dressing for home-made and store-bought pizzas. Drizzle over your pizza prior to baking or just before you take your first bite, and enjoy a tasty trip to the Mediterranean culture.",
+      "volume": 750,
+      "price": 10,
+      "image": "olive-oil-pizza-750.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Herb-infused Olive Oil for Red Meats 750ml",
+      "ingredients": "rosemary, garlic, bay leaves",
+      "description": "100% organic herb-infused olive oil. We recommend drizzling onto your favourite raw meat prior to grilling, barbequing, baking, or as desired. Can also be added to marinades for extra healthy and delicious flavours.",
+      "volume": 750,
+      "price": 10,
+      "image": "olive-oil-red-meat-750.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Herb-infused Olive Oil for Poultry 750ml",
+      "ingredients": "chives, dill, garlic",
+      "description": "100% organic herb-infused olive oil. Combined with tender love and care to elevate your poultry dishes. Drizzle over raw or cooked poultry or add to marinades. Mega delicious if drizzled over grilled boneless thighs!",
+      "volume": 750,
+      "price": 10,
+      "image": "olive-oil-poultry-750.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Herb-infused Olive Oil for Salads 750ml",
+      "ingredients": "mint, garlic, chives",
+      "description": "100% organic herb-infused olive oil to make your salads less boring! Drizzle over leafy greens, raw or cooked vegetables and enjoy this delicious twist to your everyday lunch or dinner.",
+      "volume": 750,
+      "price": 10,
+      "image": "olive-oil-salads-750.jpg"
+    }
+  ]
+}

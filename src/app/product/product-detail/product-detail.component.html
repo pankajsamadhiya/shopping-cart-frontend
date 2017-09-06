@@ -1,0 +1,45 @@
+<div class="container">
+  <div class="row">
+    <div *ngIf="getErrorMessage().length > 0" class="col-md-12 alert alert-danger">{{getErrorMessage()}}</div>
+    <div *ngIf="getUser() === null" class="col-md-12 alert alert-info">You need to be logged in to add products to the cart.</div>
+  </div>
+  <div class="row">
+    <div class="col-md-5 text-center">
+      <img *ngIf="product !== null" src="/assets/images/{{product?.image}}" width="265px" height="450px" />
+    </div>
+    <div class="col-md-7">
+      <div class="text-center">
+        <h2>
+          {{product?.name}}
+        </h2>
+      </div>
+      <br />
+      <div class="text-center">
+        <em>Infused with {{product?.ingredients}}</em>
+      </div>
+      <br />
+      <div class="text-muted">
+        {{product?.description}}
+      </div>
+      <div class="text-center">
+        <h4>Volume: {{product?.volume}}ml</h4>
+      </div>
+      <br />
+      <div class="text-center text-info">
+        <h4>Price: {{product?.price | currency:'EUR':'1.2-2'}}</h4>
+      </div>
+      <br />
+      <br />
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+          <form #addToCartForm="ngForm" (ngSubmit)="submitAddToCartForm(addToCartForm)">
+            <div class="input-group">
+                <input type="number" name="qty" value="1" min="1" max="100" class="form-control" ngModel />
+                <span class="input-group-btn"><button type="submit" class="btn btn-primary" [disabled]="getUser() === null || addToCartForm.form.invalid">Add To Cart</button></span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

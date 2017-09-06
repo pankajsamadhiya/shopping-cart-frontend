@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="row">
+    <div *ngIf="getErrorMessage().length > 0" class="col-md-12 alert alert-danger">{{getErrorMessage()}}</div>
+  </div>
+  <div class="row" *ngFor="let counter of getRows()">
+    <div class="col-md-4 text-center well" *ngFor="let p of getProducts().slice(counter * 3, (counter * 3) + 3)">
+      <div>
+        <a [routerLink]="['/product',p.id]"><img *ngIf="p !== null" src="/assets/images/{{p?.image}}" width="265px" height="450px" /></a>
+      </div>
+      <div class="text-muted text-left">
+        <a [routerLink]="['/product',p.id]">{{p?.name}}</a>
+      </div>
+      <div class="text-info text-left">
+        <h4>{{p?.price | currency:'EUR':'1.2-2'}}</h4>
+      </div>
+    </div>
+  </div>
+</div>
